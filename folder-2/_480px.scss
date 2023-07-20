@@ -1,0 +1,97 @@
+// Index.html
+
+@media (max-width: 480px) {
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      }
+   body{
+      background-color: $color5;
+      color: $color3;
+      font-family: miFuente;
+      header{
+         padding: 1em;
+         text-decoration: underline dotted $color3;
+         text-align: center;
+      }
+      main{
+         div{
+            div{
+               display: flex;
+               justify-content: center;
+               .mapa{
+                  width: 440px;
+                  height: 320px;
+               }
+            }
+            div{
+               p{
+                  padding: 1em;
+                  font-size: 1.1em;
+               }
+            }
+         }
+      }
+      footer{
+         text-align: center;
+         font-size: 1.5em;
+      }
+   }
+
+
+//Galeria.html
+
+   body{
+      main{
+         div{
+            div{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               img{
+                  @include imagen(340px, 200px);
+               }
+            }
+         }
+         div{
+            div{
+               iframe{
+                  @include imagen(380px, 240px);
+               }
+            }
+         }   
+      }
+   }
+
+//Informacion.html
+   
+   body{
+      main{
+         p{
+            font-weight: 600;
+         }
+      }
+   }   
+
+//Similares.hmtl
+
+   body{
+      main{
+         div{
+            div{
+              .img-s{
+                  @include imagen(420px, 300px)
+               }
+               a{
+                  margin-bottom: 1em;
+                  color: $color3;
+                  font-weight: 600;
+                  font-size: 1.2em;
+               }
+            }
+         }
+      }
+   }
+}

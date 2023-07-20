@@ -1,0 +1,37 @@
+$color1: #3c7cc4;
+$color2: #54a4e4;
+$color3: #143464;
+$color4: #547ca4;
+$color5: #a4c4d4;
+$color6: black;
+
+$opacity1: #3c7cc48a;
+
+@font-face {
+   font-family: miFuente;
+   src: url(./font-family/Geologica-VariableFont_CRSV\,SHRP\,slnt\,wght.ttf)
+}
+
+// use el mixin para las imagenes y el video
+
+@mixin imagen($ancho, $alto) {
+   width: $ancho;
+   height: $alto;
+   margin: 1em;
+   border: 10px solid $color3;
+}
+
+// solo use el extend para la media queri de min-width: 1367px en las paginas de galeria.html Y similares.html
+
+.extend-galeria {
+   margin: 1em;
+   border: 10px solid $color3;
+}
+
+.img {
+   @extend .extend-galeria
+}
+
+.video {
+   @extend .extend-galeria
+}

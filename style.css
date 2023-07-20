@@ -1,0 +1,77 @@
+@font-face {
+  font-family: miFuente;
+  src: url(./font-family/Geologica-VariableFont_CRSV\,SHRP\,slnt\,wght.ttf);
+}
+.extend-galeria, .video, .img {
+  margin: 1em;
+  border: 10px solid #143464;
+}
+
+@media (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #a4c4d4;
+    color: #143464;
+    font-family: miFuente;
+  }
+  body header {
+    padding: 1em;
+    text-decoration: underline dotted #143464;
+    text-align: center;
+  }
+  body main div div {
+    display: flex;
+    justify-content: center;
+  }
+  body main div div .mapa {
+    width: 440px;
+    height: 320px;
+  }
+  body main div div p {
+    padding: 1em;
+    font-size: 1.1em;
+  }
+  body footer {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  body main div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body main div div img {
+    width: 340px;
+    height: 200px;
+    margin: 1em;
+    border: 10px solid #143464;
+  }
+  body main div div iframe {
+    width: 380px;
+    height: 240px;
+    margin: 1em;
+    border: 10px solid #143464;
+  }
+  body main p {
+    font-weight: 600;
+  }
+  body main div div .img-s {
+    width: 420px;
+    height: 300px;
+    margin: 1em;
+    border: 10px solid #143464;
+  }
+  body main div div a {
+    margin-bottom: 1em;
+    color: #143464;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
