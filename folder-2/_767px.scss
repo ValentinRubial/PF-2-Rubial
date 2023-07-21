@@ -1,6 +1,6 @@
-// Index.html
+//Index.hmtl
 
-@media (max-width: 480px) {
+@media (max-width: 767px)and (min-width:481px){
    *{
       margin: 0;
       padding: 0;
@@ -21,13 +21,13 @@
                display: flex;
                justify-content: center;
                .mapa{
-                  @include imagen(450px, 300px);
+                  @include imagen(600px, 400px);
                }
             }
             div{
                p{
                   padding: 1em;
-                  font-size: 1.1em;
+                  font-size: 1.2em;
                }
             }
          }
@@ -38,8 +38,7 @@
       }
    }
 
-
-//Galeria.html
+//Galeria.hmtl
 
    body{
       main{
@@ -50,22 +49,22 @@
                justify-content: center;
                align-items: center;
                img{
-                  @include imagen(340px, 200px);
+                  @include imagen(400px, 250px);
                }
             }
          }
          div{
             div{
-               iframe{
-                  @include imagen(380px, 240px);
+               .video{
+                  @include imagen(450px, 300px);
                }
             }
-         }   
+         }
       }
    }
 
-//Informacion.html
-   
+//Informacion.hmtl
+
    body{
       main{
          div{
@@ -80,7 +79,7 @@
             font-weight: 600;
          }
       }
-   }   
+   }
 
 //Similares.hmtl
 
@@ -88,8 +87,8 @@
       main{
          div{
             div{
-              .img-s{
-                  @include imagen(340px, 200px)
+               .img-s{
+                  @include imagen(400px, 250px)
                }
                a{
                   margin-bottom: 1em;

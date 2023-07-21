@@ -1,0 +1,117 @@
+//Index.hmtl
+
+@media (min-width: 768px)and (max-width: 1024px){
+   body{
+      background-image: url(./imagenes/aconcagua.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      color: $color6;
+      font-family: miFuente;
+      header{
+         text-align: start;
+         text-decoration: underline dotted $color6;
+         padding: 1em;
+         h1{
+            font-size: 2.6em;
+            font-weight: bolder;
+         }
+         h2{
+            font-size: 2em;
+            font-weight: bolder;
+         }
+      }
+      main{
+         background-color: $opacity1;
+         div{
+            div{
+               .mapa{
+                  @include imagen(300px, 500px);
+                  
+               }
+            }
+            div{
+               p{
+                  padding: 1em;
+                  font-size: 1.2em;
+                  font-weight: 800;
+               }
+            }
+         }
+      }
+      footer{
+         margin-top: 2.4em;
+         text-align: center;
+         font-size: 1.5em;
+         font-weight: bolder;
+      }
+   } 
+
+//Galeria.html
+
+   body{
+      main{
+         div{
+            div{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               .img-fluid{
+                  @include imagen(360px,200px);
+               }
+            }
+         }
+         div{
+            div{
+               iframe{
+                  @include imagen(480px, 240px);
+               }
+            }
+         }
+      }
+   }
+
+//Informacion.html  
+
+   body{
+      main{
+         div{
+            div{
+               p{
+                  font-weight: 600;
+               }
+            }
+         }
+         p{
+            font-size: 1.2em;
+            font-weight: 800;
+         }
+      }
+      footer{
+         font-size: 1.5em;
+      }
+   }
+
+//Similares.html
+
+   body{
+      main{
+         div{
+            div{
+               .img-s{
+                  @include imagen (400px, 250px);
+               }
+               a{
+                  margin-bottom: 1em;
+                  color: $color6;
+                  font-weight: 800;
+                  font-size: 1.2em;
+                  text-decoration: underline;
+               }
+            }
+         }
+      }
+   }
+}
