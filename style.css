@@ -63,9 +63,6 @@
     font-size: 1.2em;
     font-weight: 800;
   }
-  body main p {
-    font-weight: 600;
-  }
   body main div div .img-s {
     width: 340px;
     height: 200px;
@@ -135,9 +132,6 @@
   body main div div p {
     font-size: 1.2em;
     font-weight: 800;
-  }
-  body main p {
-    font-weight: 600;
   }
   body main div div .img-s {
     width: 400px;
@@ -215,10 +209,7 @@
     border: 10px solid #143464;
   }
   body main div div p {
-    font-weight: 600;
-  }
-  body main p {
-    font-size: 1.2em;
+    font-size: 1.2;
     font-weight: 800;
   }
   body footer {
@@ -284,6 +275,9 @@
       color: black;
     }
   }
+  body main {
+    background-color: rgba(71, 136, 210, 0.4274509804);
+  }
   body main div div .mapa {
     width: 400px;
     height: 500px;
@@ -326,9 +320,8 @@
   body main div div p {
     font-weight: 800;
   }
-  body main p {
-    font-size: 1.2em;
-    font-weight: 800;
+  body main div div .p-p {
+    text-align: center;
   }
   body main div div {
     display: flex;
@@ -403,6 +396,9 @@
       color: black;
     }
   }
+  body main {
+    background-color: rgba(71, 136, 210, 0.4274509804);
+  }
   body main div div .mapa {
     width: 400px;
     height: 520px;
@@ -453,9 +449,8 @@
     font-size: 1.2em;
     font-weight: 800;
   }
-  body main p {
-    font-size: 1.2em;
-    font-weight: 800;
+  body main div div .p-p {
+    text-align: center;
   }
   body main div div {
     display: flex;
